@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Главная</title>
+        <style>
+            p {
+            font-size: 200%; 
+            align: center;
+            }
+            button {
+            appearance: none;
+            border: 0;
+            border-radius: 5px;
+            background: #57d746;
+            color: #000;
+            padding: 20px 10px;
+            font-size: 20px;
+            height:100px;
+            width:500px;
+            }
+            button:hover {
+            background: #66ff00;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p align="center">
+            <br>
+            Прогнозирование конечных свойств новых материалов (композиционных материалов)
+            </br>
+            </p>
+            <p align="center">
+            <br>
+            Выберите параметр для расчёта:
+            </br>
+            </p>
+        </div>
+        <table align="center">
+        <tr align="right" width = 500px>
+            <td>
+                <a href="{{url_for('main_1')}}">
+                <button>Модуль упругости при растяжении, ГПа</button>
+                </a>
+            </td>
+        </tr>
+        <tr align="right" width = 500px>
+            <td>
+                <a href="{{url_for('main_2')}}">
+                <button>Прочность при растяжении, МПа</button>
+                </a>
+            </td>
+        </tr>
+        <tr align="right" width = 500px>
+            <td>
+                <a href="{{url_for('main_3')}}">
+                <button>Соотношение матрица-наполнитель</button>
+                </a>
+            </td>
+        </tr>
+        </table>
+    </body>
+</html>
